@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="SchoolWebform.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        .t1{
+            color :ghostwhite;
+            position : absolute;
+            width:50%;
+            height:50%
+             
+        }
+        .auto-style1 {
+            color : chartreuse;
+            position : absolute;
+            width: 46%;
+            height: 8%;
+            left: 453px;
+            top: 39px;
+            font-family:'Arial Rounded MT';
+            font-weight:300;
+            font-size:x-large;
+        }
+    </style>
+</head>
+<body style="background-image: url('/Images/School4.jpg'); background-repeat:unset">
+    <form id="form1" runat="server">
+        <div>
+        </div>
+    <p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </p>
+    <p class="auto-style1">SCHOOL MANAGEMENT</p>
+                <p>
+                    &nbsp;</p>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+    </form>
+    </body>
+</html>
