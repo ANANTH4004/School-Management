@@ -9,15 +9,14 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" DataKeyNames="SubjectId" DataSourceID="SqlDataSource1" Height="375px" Width="696px">
+            <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" DataKeyNames="SubId" DataSourceID="SqlDataSource1" Height="375px" Width="696px">
                 <Columns>
-                    <asp:BoundField DataField="SubjectId" HeaderText="SubjectId" ReadOnly="True" SortExpression="SubjectId" />
-                    <asp:BoundField DataField="SubjectName" HeaderText="SubjectName" SortExpression="SubjectName" />
+                    <asp:BoundField DataField="SubId" HeaderText="SubId" ReadOnly="True" SortExpression="SubId" />
+                    <asp:BoundField DataField="SubName" HeaderText="SubName" SortExpression="SubName" />
                     <asp:BoundField DataField="Duration" HeaderText="Duration" SortExpression="Duration" />
-                    <asp:BoundField DataField="ClassNo" HeaderText="ClassNo" SortExpression="ClassNo" />
                 </Columns>
             </asp:GridView>
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:SchoolDBConnectionString %>" SelectCommand="SELECT * FROM [Subjects]"></asp:SqlDataSource>
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:SchoolConnectionString %>" SelectCommand="SELECT [SubId], [SubName], [Duration] FROM [Subjects]" OnSelecting="SqlDataSource1_Selecting"></asp:SqlDataSource>
         </div>
     </form>
 </body>

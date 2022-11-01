@@ -133,7 +133,10 @@
     <Content Include="Images\School4.jpg" />
     <Content Include="Student.aspx" />
     <Content Include="Subjects.aspx" />
+    <Content Include="SourceCode.txt" />
     <Content Include="WebForm1.aspx" />
+    <None Include="Properties\PublishProfiles\SchoolWebform - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\SchoolWebform20221031220043 - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />

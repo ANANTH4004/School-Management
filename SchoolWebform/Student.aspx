@@ -21,12 +21,11 @@
             <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="RollNo" DataSourceID="SqlDataSource1" Height="463px" Width="953px" CssClass="auto-style2">
                 <Columns>
                     <asp:BoundField DataField="RollNo" HeaderText="RollNo" ReadOnly="True" SortExpression="RollNo" />
-                    <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />
-                    <asp:BoundField DataField="DOB" HeaderText="DOB" SortExpression="DOB" />
-                    <asp:BoundField DataField="ClassNo" HeaderText="ClassNo" SortExpression="ClassNo" />
+                    <asp:BoundField DataField="StudName" HeaderText="StudName" SortExpression="StudName" />
+                    <asp:BoundField DataField="Age" HeaderText="Age" SortExpression="Age" />
                 </Columns>
             </asp:GridView>
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:SchoolDBConnectionString %>" SelectCommand="SELECT * FROM [Students] ORDER BY [RollNo]"></asp:SqlDataSource>
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:SchoolConnectionString %>" SelectCommand="SELECT [RollNo], [StudName], [Age] FROM [Student]"></asp:SqlDataSource>
         </div>
     </form>
 </body>
